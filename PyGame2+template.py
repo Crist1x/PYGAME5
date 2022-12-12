@@ -25,7 +25,7 @@ def main():
     screen = pygame.display.set_mode(size)
     pygame.display.set_caption('Спрайты')
     screen.fill("white")
-    image = load_image("bomb.png")
+    image = load_image("robot.png", (255, 128, 128))
     running = True
     while running:
         # внутри игрового цикла ещё один цикл
