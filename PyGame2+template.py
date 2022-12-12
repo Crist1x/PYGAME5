@@ -28,7 +28,8 @@ def main():
                 running = False
             # РЕАКЦИЯ НА ОСТАЛЬНЫЕ СОБЫТИЯ
             if event.type == pygame.MOUSEBUTTONDOWN:
-                screen.blit(image, event.pos)
+                screen.blit(image, (event.pos[0] - image.get_width()//2,
+                                    event.pos[1] - image.get_width()//2))
         # отрисовка и изменение свойств объектов
         # ...
         pygame.display.flip()
